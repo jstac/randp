@@ -28,21 +28,15 @@ corresponding algorithm that is shown to be globally convergent with
 probability one.  When additional restrictions are imposed, an
 :math:`O_P(n^{-1/2})` rate of convergence for Monte Carlo error is obtained.
 
-Downloads
----------
-
-* :download:`PDF file<_static/randp/randp7.pdf>`
-* :download:`slides<_static/randp/main.pdf>`
-* :download:`Zip file<_static/randp/python_files.zip>` of Python code for implementing figures 1-3.
-
 
 Code
 --------
 
-Python code can be found in the zip file posted above, 
-and also on the `Google code site <https://sites.google.com/site/fviprobone/home>`_.
-Matlab code is posted below.  The code is written by my RA Alex Olssen, and
-replicates figure 3 in the paper.  There are two files, and the content is well documented and self-explanitory.
+Python code can be found in the repository, and also on the `Google code site
+<https://sites.google.com/site/fviprobone/home>`_.  Matlab code is posted
+as well.  The latter is written by my RA Alex Olssen, and replicates figure 3 in
+the paper.  There are two files, and the content is well documented and
+self-explanitory.
 
 Some general comments on coding are as follows: First, the paper suggests
 kernel smoothers as one possible nonexpansive approximation method, and linear
@@ -53,13 +47,3 @@ dimensional setting and find that Gaussian quadrature is more efficient than
 Monte Carlo, there's no problems with using it:  Gaussian quadrature paired
 with a nonexpansive approximator should again be nonexpansive.
 
-
-optgrowth.m
-^^^^^^^^^^^^^^^^^
-.. literalinclude:: _static/randp/optgrowth.m
-    :language: matlab
-
-vmax.m
-^^^^^^^^^^^^^^^^^
-.. literalinclude:: _static/randp/vmax.m
-    :language: matlab
